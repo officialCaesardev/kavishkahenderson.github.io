@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(
+    132deg,
+    rgb(113, 143, 175) 0%,
+    rgb(69, 92, 114) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+}

@@ -1,5 +1,5 @@
 body {
-  background-image: url(Website/src/BG2.jpg);
+  background-image: url(src/BG2.jpg);
   background-attachment: fixed;
   background-size: cover;
   padding-top: 50px;
@@ -47,43 +47,10 @@ body {
   margin: 0;
   padding: 5px;
   top: 0;
+  margin-left: 160px;
 }
 
-#login {
-  color: rgb(0, 0, 0);
-  font-size: larger;
-  text-decoration: none;
-  border: 2px solid black;
-  padding: 10px;
-  background-color: white;
-}
-#post1 img {
-  width: 300px;
-  margin-left: 17px;
-}
-
-#post1 {
-  width: 350px;
-  border: 2px solid black;
-  box-sizing: border-box;
-  margin-left: 17px;
-  background: linear-gradient(
-    132deg,
-    rgb(113, 143, 175) 0%,
-    rgb(69, 92, 114) 100%
-  );
-}
-
-#post1 h2 {
-  margin-left: 70px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-/* #footer {
+#footer {
   color: white;
   background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%);
   margin: 0;
@@ -101,4 +68,50 @@ a {
 
 #socil-meida-footer {
   text-align: right;
-} */ ;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: all 0.5s ease;
+  padding-bottom: 30px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+#wikipidia {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: all 0.5s ease;
+  padding-bottom: 30px;
+}
