@@ -1,0 +1,258 @@
+body {
+    background: linear-gradient(132deg, rgb(0, 103, 154) 0.00%, rgb(0, 173, 239) 100.00%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.doc-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#collum-main {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    order: -1;
+}
+
+#div1 {
+    height: 75px;
+    width: 100%;
+    font-size: 20px;
+    order: 2;
+    /* border: 2px solid black; */
+}
+
+#headline:first-letter {
+    text-transform: uppercase;
+}
+
+#div2 {
+    flex-grow: 1;
+    /* width: 100%; */
+    padding: 15px;
+    /* background-color: rgb(94, 255, 0);
+    border: 3px solid black; */
+    order: 3;
+    transition: 0.25s;
+}
+
+#div3 {
+    flex-grow: 1;
+    /* width: 100%; */
+    padding: 15px;
+    /* background-color: rgb(0, 217, 255);
+    border: 3px solid black; */
+    order: 3;
+
+}
+
+
+.container {
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    /* border: 3px solid black;
+    background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
+    border-radius: 20px; */
+}
+
+#headline {
+    color: white;
+    text-align: center;
+}
+
+#headline::first-letter {
+    text-transform: uppercase;
+}
+
+.image {
+    width: 100px;
+    margin: 3px;
+    border-radius: 15px;
+    transition: all 0.25s;
+}
+
+.image-1 {
+    width: 313px;
+}
+
+.image-5 {
+    width: 313px;
+}
+
+.image-6 {
+    width: 150px;
+}
+
+.image-7 {
+    width: 150px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    transition: 0.25s;
+}
+
+.main {
+    float: left;
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    transition: 0.25s;
+}
+
+.image:hover {
+    transform: scale(1.5);
+}
+
+/* DARK IMAGES CSS START */
+
+.container-dark-images {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 3px solid black;
+    background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
+    border-radius: 20px; */
+}
+
+.dark-image-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dark-image:hover {
+    transform: scale(1.5);
+}
+
+.dark-image {
+    width: 100px;
+    margin: 3px;
+    border-radius: 15px;
+    transition: all 0.25s;
+}
+
+.darkimage-1 {
+    width: 313px;
+}
+
+.darkimage-5 {
+    width: 313px;
+}
+
+.darkimage-6 {
+    width: 150px;
+}
+
+.darkimage-7 {
+    width: 150px;
+}
+
+.column-dark-image {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+/* MOBILE START */
+
+@media screen and (max-width:575px) {
+    .container {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #div1 {
+        height: 75px;
+        width: 100%;
+        font-size: 15px;
+        order: 2;
+        /* border: 2px solid black; */
+    }
+
+    #div2 {
+        /* flex-grow: 1; */
+        width: 100%;
+        padding: 15px;
+        /* background-color: rgb(94, 255, 0);
+        border: 3px solid black; */
+        order: 3;
+    }
+
+    #div3 {
+        /* flex-grow: 1; */
+        width: 100%;
+        padding: 15px;
+        /* background-color: rgb(0, 217, 255);
+        border: 3px solid black; */
+        order: 3;
+    }
+
+    .column-dark-image {
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .container-dark-images {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 3px solid black;
+        background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
+        border-radius: 20px; */
+    }
+
+    .main {
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image:hover {
+        transform: scale(1);
+    }
+
+    .image:active {
+        transform: scale(1.5);
+    }
+
+    .dark-image:active {
+        transform: scale(1.5);
+    }
+
+    .dark-image:hover {
+        transform: scale(1);
+    }
+}
+
+/* MOBILE END */
